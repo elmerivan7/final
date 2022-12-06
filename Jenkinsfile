@@ -28,12 +28,6 @@ pipeline {
               sh 'curl http://localhost:9091'
             }
           }
-          stage('Deploy - QA') {
-            when {
-                expression {
-                    params.DEPLOY_QA == true
-             }
-           }
         }
     }
   }
