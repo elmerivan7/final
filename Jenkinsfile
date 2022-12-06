@@ -32,10 +32,9 @@ pipeline {
             when {
                 expression {
                     params.DEPLOY_QA == true
-                }
-            }
+             }
+           }
         }
     }
   }
-
 }
