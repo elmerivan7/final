@@ -9,12 +9,6 @@ pipeline {
         sh "docker-compose build"
       }
     }
-    stage('Deploy - QA') {
-            when {
-                expression {
-                    params.DEPLOY_QA == true
-                }
-            }
     stage('Run tests against the container') {
       
         parallel {
